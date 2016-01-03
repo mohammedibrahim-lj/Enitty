@@ -6,11 +6,11 @@ using System.Web;
 
 namespace Entity.Models
 {
-    public class TeachersTable
+    public class StuSports
     {
         [Key()]
-        public int TeacherID { get; set; }
-        public String TeacherName { get; set; }
-        public virtual StudentTable studentTables {get; set;}
+        public int SportsID { get; set; }
+        public String SportName { get; set; }
+        public StudentTable studTab { get; set; }
     }
 }

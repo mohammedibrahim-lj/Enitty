@@ -17,6 +17,23 @@ namespace Entity.Controllers
         // GET: StudentTables
         public ActionResult Index()
         {
+            StudentTable studtab3 = new StudentTable() { StudentName = "Tom" };
+            StudentTable studtab1 = new StudentTable() { StudentName = "Jack" };
+            StudentTable studtab2 = new StudentTable() { StudentName = "Hunter" };
+            StudentTable studtab = new StudentTable() { StudentName = "Twister" };
+            db.StudTable.Add(studtab3);
+            db.StudTable.Add(studtab1);
+            db.StudTable.Add(studtab2);
+            db.StudTable.Add(studtab);
+            db.TeachTable.Add(new TeachersTable() {TeacherName="aa", studentTables=studtab });
+            db.TeachTable.Add(new TeachersTable() { TeacherName = "bb", studentTables = studtab });
+            db.TeachTable.Add(new TeachersTable() { TeacherName = "cc", studentTables = studtab2 });
+            db.TeachTable.Add(new TeachersTable() { TeacherName = "dd", studentTables = studtab3 });
+            db.TeachTable.Add(new TeachersTable() { TeacherName = "ee", studentTables = studtab });
+            db.TeachTable.Add(new TeachersTable() { TeacherName = "ff", studentTables = studtab1 });
+            db.TeachTable.Add(new TeachersTable() { TeacherName = "gg", studentTables = studtab2 });
+            
+            db.SaveChanges();
             return View(db.StudTable.ToList());
         }
 

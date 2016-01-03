@@ -18,17 +18,18 @@
         <dd>
             @Html.DisplayFor(model => model.StudentName)
         </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.StudentAge)
-        </dt>
-
         <dd>
-            @Html.DisplayFor(model => model.StudentAge)
-        </dd>
-
+        <dt>
+            Teachers
+        </dt>
+        
     </dl>
+   
 </div>
+@foreach (var teachList in Model.teachers)
+{
+    <li>@teachList.TeacherName</li>
+}
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.StudentID }) |
     @Html.ActionLink("Back to List", "Index")

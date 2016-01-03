@@ -15,9 +15,6 @@
         <th>
             @Html.DisplayNameFor(model => model.StudentName)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.StudentAge)
-        </th>
         <th></th>
     </tr>
 
@@ -25,9 +22,6 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.StudentName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.StudentAge)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.StudentID }) |

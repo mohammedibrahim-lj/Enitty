@@ -9,5 +9,7 @@ namespace Entity.Models
     public class StudentDB : DbContext
     {
         public DbSet<StudentTable> StudTable { get; set; }
+        public DbSet<TeachersTable> TeachTable { get; set; }
+        public DbSet<StuSports> studeSport { get; set; }
     }
 }

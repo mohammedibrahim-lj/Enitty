@@ -12,7 +12,7 @@ namespace Entity.Models
         [Key]
         public int StudentID { get; set; }
         public String StudentName { get; set; }
-        public int StudentAge { get; set; }
-        public StudentTable studentTable { get; set; }
+        public virtual List<TeachersTable> teachers { get; set; }
+        public virtual List<StuSports> studentSports { get; set; }
     }
 }

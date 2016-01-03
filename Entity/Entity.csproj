@@ -17,7 +17,7 @@
     <AssemblyName>Entity</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -140,6 +140,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\StudentDB.cs" />
     <Compile Include="Models\StudentTable.cs" />
+    <Compile Include="Models\StuSports.cs" />
     <Compile Include="Models\TeachersTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -175,11 +176,8 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\View.cshtml" />
-    <Content Include="Views\StudentTables\Create.cshtml" />
-    <Content Include="Views\StudentTables\Delete.cshtml" />
-    <Content Include="Views\StudentTables\Details.cshtml" />
-    <Content Include="Views\StudentTables\Edit.cshtml" />
     <Content Include="Views\StudentTables\Index.cshtml" />
+    <Content Include="Views\StudentTables\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -215,7 +213,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>1166</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:1166/</IISUrl>
+          <IISUrl>http://localhost/Entity</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
