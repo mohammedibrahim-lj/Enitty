@@ -13,5 +13,6 @@ namespace Entity.Models
         public int StudentID { get; set; }
         public String StudentName { get; set; }
         public int StudentAge { get; set; }
+        public StudentTable studentTable { get; set; }
     }
 }

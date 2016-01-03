@@ -140,6 +140,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\StudentDB.cs" />
     <Compile Include="Models\StudentTable.cs" />
+    <Compile Include="Models\TeachersTable.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
