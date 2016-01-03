@@ -12,5 +12,6 @@ namespace Entity.Models
         public int TeacherID { get; set; }
         public String TeacherName { get; set; }
         public virtual StudentTable studentTables {get; set;}
+        public virtual List<StuSports> studSports { get; set; }
     }
 }

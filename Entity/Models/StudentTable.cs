@@ -13,6 +13,7 @@ namespace Entity.Models
         public int StudentID { get; set; }
         public String StudentName { get; set; }
         public virtual List<TeachersTable> teachers { get; set; }
-        public virtual List<StuSports> studentSports { get; set; }
+        public virtual StuSports studentSports { get; set; }
+        
     }
 }
